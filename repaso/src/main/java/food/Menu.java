@@ -20,6 +20,13 @@ public class Menu {
      public void addDish(Dish dish){
          this.dishList.add(dish);
      }
+     public void showMenu(){
+         for (DishType dishType : DishType.values()) {
+             //Los enum se pueden recorrer con for each como un array
+             System.out.println("*** --- = " + dishType + "---***");
+             
+         }
+     }
      public ArrayList<String> getDishesPerType (DishType dishType){
         // ArrayList<Dish> foundDishes =new ArrayList<>();
         ArrayList<String> foundDishes= new ArrayList<>();
